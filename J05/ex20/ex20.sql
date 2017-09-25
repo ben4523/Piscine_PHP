@@ -1,0 +1,1 @@
+SELECT 	film.id_genre, genre.nom AS 'nom genre', film.titre AS 'titre film', distrib.id_distrib, distrib.nom AS 'nom distrib' FROM film LEFT OUTER JOIN genre ON film.id_genre = genre.id_genre LEFT OUTER JOIN distrib ON distrib.id_distrib = film.id_distrib WHERE film.id_genre >= 4 AND film.id_genre <= 8
